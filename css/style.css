@@ -50,7 +50,7 @@ nav a:hover {
 
 .faq-container {
     height: 500px;
-    background-color: aqua;
+    background-color: #fcfaf9;
 }
 
 .newsletter-container {
@@ -88,7 +88,7 @@ nav a:hover {
 
 .policy-container {
     display: flex;
-    display: blo;
+    display: row;
     flex-direction: row;
     background: #000000;
     align-items: center;
