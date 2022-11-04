@@ -166,11 +166,11 @@ nav a:hover {
 }
 
 .answer {
-    /* max-height: 0;
-    overflow: hidden; */
+    max-height: 0;
+    overflow: hidden;
     position: relative;
     background-color: #212838;
-    color: yellow;
+    transition: max-height 650ms;
 }
 
 .answer:before {
@@ -182,4 +182,22 @@ nav a:hover {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+}
+
+.answer p {
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .add-icon {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .remove-icon {
+    display: block;
 }
