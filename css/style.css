@@ -1,3 +1,4 @@
+/* Importing Google's font */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 /* Doc: https://www.w3schools.com/CSSref/css3_pr_box-sizing.php */
@@ -8,11 +9,12 @@
     font-family: 'Oxygen', sans-serif;
 }
 
+/* START - Header */
 .header-container {
     display: flex;
     flex-direction: row;
     height: 90px;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     background: #000000;
@@ -48,18 +50,32 @@ nav a:hover {
     background-color: #ff0000;
 }
 
+/* START - FAQ */
 .faq-container {
-    height: 500px;
     background-color: #fcfaf9;
 }
 
+/* START - Newsletter & Social Media Buttons */
 .newsletter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 150px;
     padding-left: 50px;
     padding-right: 50px;
     align-items: center;
 }
 
+.newsletter-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialmedia {
+    margin-right: 20px;
+}
+
+/* START - Footer */
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -86,6 +102,7 @@ nav a:hover {
     color: #ffffff;
 }
 
+/* START - Policy & TM */
 .policy-container {
     display: flex;
     display: row;
@@ -110,4 +127,59 @@ nav a:hover {
 .policy-item a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.faq-container {
+    width: 100%;
+    background-color: #3c4053;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-item {
+    background-color: #ff0000;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px rgba(0, 0, blue0, .1);
+}
+
+.accordion-link {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link ion-icon {
+    color: aqua;
+    padding: 0.5rem;
+}
+
+.remove-icon {
+    display: none;
+}
+
+.answer {
+    /* max-height: 0;
+    overflow: hidden; */
+    position: relative;
+    background-color: #212838;
+    color: yellow;
+}
+
+.answer:before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: burlywood;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
