@@ -1,3 +1,6 @@
+<!-- Mario Petrizzelli
+Group Project -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,37 +8,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <title>MAREMJES Gallery - Frequently Asked Questions</title>
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/b6ca5087fe.js" crossorigin="anonymous"></script>
-    <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS Bootstrap & Custom-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="date()">
+    <div id="date-bar"></div>
+    <!-- START Navbar -->
     <nav>
+        <!-- Navbar list logo & list item -->
         <ul class="menu">
-            <li class="logo"><a href="#">Flowers</a></li>
+            <li class="logo"><a href="#">MAREMJES</a></li>
             <li class="item"><a href="#">Home</a></li>
             <li class="item"><a href="#">About</a></li>
-            <li class="item has-submenu">
-                <a tabindex="0">Artists</a>
-                <ul class="submenu">
-                    <li class="subitem"><a href="#">Vincent van Gogh</a></li>
-                    <li class="subitem"><a href="#">Pablo Picasso</a></li>
-                    <li class="subitem"><a href="#">Leonardo da Vinci</a></li>
-                    <li class="subitem"><a href="#">Claude Monet</a></li>
-                </ul>
-            </li>
-            <li class="item"><a href="#">Plan your visit</a></li>
-            <li class="item"><a href="#">Shop</a></li>
+            <li class="item"><a href="#">Catalog</a></li>
             <li class="item"><a href="#">Contact</a></li>
             <li class="item button"><a href="#">Membership</a></li>
             <li class="item button secondary"><a href="#">Buy Tickets</a></li>
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
-    <script src="script.js"></script>
+    <!-- END Navbar -->
+
+    <!-- START Container -->
+    <div class="container">
+        <!-- START Accordion -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                        consequatur, illum, iste magni deserunt laudantium reprehenderit optio nisi ipsum tempora
+                        blanditiis. Repellat doloremque maiores, reiciendis nemo corporis ipsum itaque eaque sint sunt
+                        autem fuga quisquam nesciunt, illo assumenda vero exercitationem dolor cupiditate mollitia
+                        nulla, ea eum possimus beatae. Esse vero vel eveniet perferendis, repellendus doloribus
+                        cupiditate nostrum earum accusantium aspernatur, magni minima harum similique vitae, tempora
+                        eius amet ipsum? Quisquam nulla odio praesentium, eum iste sit ex obcaecati! Temporibus eius
+                        voluptates quasi dolores non maxime aut aperiam fugit veniam, deserunt corrupti expedita
+                        consequatur, inventore qui. Officia animi obcaecati ipsum dolorem?</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati nemo
+                        autem repellendus amet cumque debitis quo, quod ab at eos rerum, harum voluptatem. Quas quisquam
+                        voluptates veritatis cupiditate optio sequi corrupti facere, libero dolorum sit suscipit laborum
+                        est fugiat maiores consequatur quia ea voluptas eaque porro architecto dolor nesciunt tenetur
+                        earum! Magni dolorum delectus temporibus impedit, ducimus quae soluta maxime, sequi magnam
+                        reiciendis harum laboriosam architecto aliquid commodi repellat rerum asperiores nisi, eius
+                        labore nesciunt veniam eligendi. Suscipit, laboriosam et temporibus soluta sunt hic aspernatur
+                        esse assumenda iste vero voluptatum aliquid. Praesentium, sunt voluptatem est quo ipsam
+                        molestiae quis magni?</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                        ipsam dolores in magni ullam illo consectetur iste nemo itaque maiores. Earum accusamus qui quia
+                        vero voluptatem! Deserunt, magnam! Perspiciatis eveniet, modi voluptatem dolor quisquam neque
+                        provident. Sequi mollitia soluta vel sint, inventore optio nobis sit quod perferendis magni
+                        temporibus cupiditate reiciendis reprehenderit dolor numquam officiis voluptates nihil deserunt
+                        culpa? Aut, animi porro laudantium velit soluta, accusantium illo pariatur, accusamus magni eum
+                        recusandae quibusdam dicta. Recusandae, voluptatibus minus laborum odit delectus voluptatem
+                        adipisci pariatur. Quas quibusdam similique adipisci ipsa officia minus, cupiditate assumenda
+                        error magni sapiente sunt hic a modi debitis?</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Accordion Item #4
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        consequatur et cum odit reiciendis repudiandae earum non aspernatur nam quae. Quas deserunt
+                        vitae dolor laboriosam et quo suscipit aspernatur commodi! Sapiente error temporibus, pariatur
+                        sed recusandae vel fugit laborum distinctio! Velit, soluta consequatur! Veniam cupiditate
+                        consectetur expedita doloremque voluptate saepe aliquam, quidem sed velit quisquam eligendi odit
+                        laboriosam animi ea recusandae, molestias omnis eius. Assumenda ducimus, unde dicta praesentium
+                        rem dolore quisquam aut, rerum veritatis illo magnam delectus, fugit vel optio est qui eos sint
+                        id explicabo placeat ad dolores totam sapiente? Illum dolores fuga ipsam repudiandae,
+                        exercitationem voluptate voluptates.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Accordion Item #5
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum unde
+                        itaque eos soluta ex, iste possimus saepe veritatis delectus autem, eaque reprehenderit eveniet
+                        voluptas dignissimos numquam harum sunt vitae impedit doloremque fugit dolores distinctio
+                        mollitia odio enim. Blanditiis dolorum alias provident iure vitae expedita totam officiis
+                        quaerat molestias voluptates tempore, repellat, veniam quidem suscipit quas rem! Exercitationem
+                        velit quibusdam omnis culpa libero sed animi debitis, doloribus voluptates quo autem, error
+                        deleniti mollitia fugit in non, excepturi esse. Assumenda alias, quam similique illum ducimus a
+                        dignissimos corporis eveniet commodi eius optio dolores? Odit ut vero cupiditate vitae iusto
+                        explicabo quasi facere.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Conatiner -->
+    </div>
+    <!-- JS Bootstrap & Custom -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
