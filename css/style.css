@@ -139,7 +139,6 @@ Menu */
 
     .button a {
         background: red;
-        border: 1px white solid;
     }
 
     .button.secondary {
@@ -148,7 +147,7 @@ Menu */
 
     .button.secondary a {
         background: transparent;
-        border: 1px #0080ff solid;
+        border: 1px white solid;
     }
 
     .button a:hover {
@@ -156,8 +155,8 @@ Menu */
     }
 
     .button:not(.secondary) a:hover {
-        background: royalblue;
-        border-color: darkblue;
+        background: white;
+        color: black;
     }
 }
 
@@ -204,5 +203,17 @@ Menu */
 }
 
 .container {
+    padding-top: 2.5%;
     width: 80%;
+}
+
+.faq {
+    padding-bottom: 2.5%;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+
 }
