@@ -283,10 +283,10 @@ Group Project -->
             <div class="footer-item">
                 <h2 class="footer-title">Future Exhibitions</h2>
                 <p>Receive 2023 exhibitions' brouchure.</p>
-                <form id="form" action="#">
+                <form id="form">
                     <div class="inputBox">
-                        <input type="text" id="email" placeholder="Email address" onkeyup="emailVerification()">
-                        <input type="submit" value="Download">
+                        <input id="email" type="text" placeholder="Email address" onkeyup="emailVerification()">
+                        <input id="submit" type="submit" value="Download" onclick="submitNewsletter()">
                         <div><i class="fa-solid fa-circle indicator"></i><span id="checker"></span></div>
                     </div>
                 </form>

@@ -6,6 +6,8 @@ Group Project */
 const today = new Date;
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
+const form = document.getElementById("form");
+const submit = document.getElementById("submit");
 
 /* Get date */
 function date() {
@@ -32,9 +34,8 @@ function toggleMenu() {
     }
 }
 
-/* Newsletter registration */
+/* Newsletter e-mail verification */
 function emailVerification() {
-    const form = document.getElementById("form");
     const email = document.getElementById("email").value;
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{3}$/;
     if (email.match(pattern)) {
@@ -49,5 +50,17 @@ function emailVerification() {
     if (email == "") {
         form.classList.remove('notOk');
         form.classList.remove('ok');
+        document.getElementById("checker").innerHTML = "";
     }
+}
+
+/* Newlsetter submission */
+function submitNewsletter() {
+    form.addEventListener("submit", preventRefresh);
+    alert("Thank you. You'll receive our brouchure in your " + document.getElementById("email").value + " inbox shortly.");
+}
+
+/* Page refresh prevention */
+function preventRefresh(event) {
+    event.preventDefault();
 }
