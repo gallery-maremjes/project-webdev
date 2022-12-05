@@ -17,6 +17,7 @@ body {
     font-size: 16px;
 }
 
+/* Date bar CSS  */
 #date-bar {
     background-color: gainsboro;
     color: #666666;
@@ -61,7 +62,7 @@ a {
 
 .item:not(.button) a:hover,
 .item a:hover::after {
-    color: #ccc;
+    color: #dcb46f;
 }
 
 /* Customisation using Flex. Documentation: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
@@ -138,7 +139,7 @@ Menu */
     }
 
     .button a {
-        background: orange;
+        background: #dcb46f;
     }
 
     .button.secondary {
@@ -204,6 +205,7 @@ Menu */
 
 .container {
     padding-top: 2.5%;
+    padding-bottom: 2.5%;
     width: 80%;
 }
 
@@ -216,4 +218,120 @@ Menu */
     font-weight: bold;
     padding-top: 10px;
 
+}
+
+/* Footer */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #dcb46f;
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+
+/* Footer main */
+.footer-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 29.8125rem
+
+    /* 477px */
+) {
+    .footer-main {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 77.5rem
+
+    /* 1240px */
+) {
+    .footer-main {
+        justify-content: space-evenly;
+    }
+}
+
+.footer-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+}
+
+/* Footer main | Newsletter form */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+
+input[type="submit"] {
+    background-color: #dcb46f;
+    color: white;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+/* Footer social */
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* Footer legal */
+.footer-legal {
+    background-color: black;
+    color: white;
+    padding: 0.9375rem 1.875rem;
+    display: flex;
+
+}
+
+.footer-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+
+/* one before the last child */
+.footer-legal-list li:nth-last-child(2) {
+    flex: 1;
 }
