@@ -23,7 +23,7 @@ Group Project -->
     <nav>
         <!-- Navbar list logo & list item -->
         <ul class="menu">
-            <li class="logo"><a href="#">MAREMJES Gallery</a></li>
+            <li class="logo"><img class="logo-img" src="/img/logo-sml.png" alt="maremjes-gallery-logo"> </li>
             <li class="item"><a href="#">Home</a></li>
             <li class="item"><a href="#">About</a></li>
             <li class="item"><a href="#">Catalog</a></li>
@@ -259,14 +259,16 @@ Group Project -->
                 <p>54 Liverpool Street<br>
                     London W1S 3LZ</p>
                 <p>T +44 (0)20 1234 5678 <br>
-                    london@maremjes.com</p>
+                    <a href="mailto:london@maremjes.com">london@maremjes.com</a>
+                </p>
             </div>
             <div class="footer-item">
                 <h2 class="footer-title">Dublin</h2>
                 <p>25 Cork Street<br>
                     Dublin D01 E897</p>
                 <p>T +353 (0)1 123 4567 <br>
-                    dublin@maremjes.com</p>
+                    <a href="mailto:dublin@maremjes.com">dublin@maremjes.com</a>
+                </p>
             </div>
             <div class="footer-item">
                 <h2 class="footer-title maremjes-info">MAREMJES Gallery</h2>
@@ -281,9 +283,12 @@ Group Project -->
             <div class="footer-item">
                 <h2 class="footer-title">Future Exhibitions</h2>
                 <p>Receive 2023 exhibitions' brouchure.</p>
-                <form>
-                    <input type="email" name="email" placeholder="Email address">
-                    <input type="submit" value="Download">
+                <form id="form" action="#">
+                    <div class="inputBox">
+                        <input type="text" id="email" placeholder="Email address" onkeyup="emailVerification()">
+                        <input type="submit" value="Download">
+                        <div><i class="fa-solid fa-circle indicator"></i><span id="checker"></span></div>
+                    </div>
                 </form>
             </div>
         </div>

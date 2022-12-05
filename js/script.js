@@ -6,7 +6,6 @@ Group Project */
 const today = new Date;
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
-const items = document.querySelectorAll(".item");
 
 /* Get date */
 function date() {
@@ -22,7 +21,7 @@ function date() {
     document.getElementById("date-bar").innerHTML = "<i class='fas fa-calendar'></i> &nbsp" + daysOuput[dayIndex] + ", " + date + " " + monthsOutput[monthIndex] + " " + year + " | Dublin, Ireland";
 }
 
-/* Toggle mobile menu */
+/* Toggle mobile menu. The icon changes based on the event. */
 function toggleMenu() {
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
@@ -33,12 +32,22 @@ function toggleMenu() {
     }
 }
 
-/* Event Listeners */
-toggle.addEventListener("click", toggleMenu, false);
-for (let item of items) {
-    if (item.querySelector(".submenu")) {
-        item.addEventListener("click", toggleItem, false);
+/* Newsletter registration */
+function emailVerification() {
+    const form = document.getElementById("form");
+    const email = document.getElementById("email").value;
+    const pattern = /^[^ ]+@[^ ]+\.[a-z]{3}$/;
+    if (email.match(pattern)) {
+        form.classList.add('ok');
+        form.classList.remove('notOk');
+        document.getElementById("checker").innerHTML = " This email is correct";
+    } else {
+        form.classList.add('notOk');
+        form.classList.remove('ok');
+        document.getElementById("checker").innerHTML = " Please check your email";
     }
-    item.addEventListener("keypress", toggleItem, false);
+    if (email == "") {
+        form.classList.remove('notOk');
+        form.classList.remove('ok');
+    }
 }
-document.addEventListener("click", closeSubmenu, false);
