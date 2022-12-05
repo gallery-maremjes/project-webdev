@@ -295,18 +295,18 @@ input[type="submit"] {
 }
 
 /* Footer social */
-.ft-social {
+.footer-social {
     padding: 0 1.875rem 1.25rem;
 }
 
-.ft-social-list {
+.footer-social-list {
     display: flex;
     justify-content: center;
     border-top: 1px #777 solid;
     padding-top: 1.25rem;
 }
 
-.ft-social-list li {
+.footer-social-list li {
     margin: 0.5rem;
     font-size: 1.25rem;
 }
