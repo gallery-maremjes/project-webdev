@@ -205,7 +205,6 @@ Menu */
         border-radius: 0;
     }
 
-
 }
 
 .container {
@@ -304,7 +303,7 @@ a:hover {
     margin-top: 0.3125rem;
 }
 
-input[type="submit"] {
+#submit {
     background-color: #dcb46f;
     color: white;
 

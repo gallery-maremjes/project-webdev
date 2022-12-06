@@ -5,9 +5,12 @@ Group Project */
 /* Documentation: https://www.w3schools.com/jsref/met_document_queryselector.asp */
 const today = new Date;
 const toggle = document.querySelector(".toggle");
+const items = document.querySelectorAll(".item");
 const menu = document.querySelector(".menu");
 const form = document.getElementById("form");
 const submit = document.getElementById("submit");
+
+var emailIsCorrect;
 
 /* Get date */
 function date() {
@@ -34,40 +37,42 @@ function toggleMenu() {
     }
 }
 
+/* Event Listener to open close menu on mobile */
+toggle.addEventListener("click", toggleMenu);
+
+
 /* Newsletter e-mail verification */
 function emailVerification() {
     const email = document.getElementById("email").value;
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{3}$/;
     if (email.match(pattern)) {
+        emailIsCorrect = true;
         form.classList.add('ok');
         form.classList.remove('notOk');
         document.getElementById("checker").innerHTML = " This email is correct";
     } else {
+        emailIsCorrect = false;
         form.classList.add('notOk');
         form.classList.remove('ok');
         document.getElementById("checker").innerHTML = " Please check your email";
     }
     if (email == "") {
+        emailIsCorrect = false;
         form.classList.remove('notOk');
         form.classList.remove('ok');
         document.getElementById("checker").innerHTML = "";
     }
 }
 
-/* Event Listeners */
-toggle.addEventListener("click", toggleMenu, false);
-for (let item of items) {
-    if (item.querySelector(".submenu")) {
-        item.addEventListener("click", toggleItem, false);
-    }
-    item.addEventListener("keypress", toggleItem, false);
-}
-document.addEventListener("click", closeSubmenu, false);
-
 /* Newlsetter submission */
 function submitNewsletter() {
     form.addEventListener("submit", preventRefresh);
-    alert("Thank you. You'll receive our brouchure in your " + document.getElementById("email").value + " inbox shortly.");
+    if (emailIsCorrect) {
+        alert("Thank you. You'll receive our brouchure in your " + document.getElementById("email").value + " inbox shortly.");
+    }
+    else {
+        alert("The inserted email is not correct, try again.");
+    }
 }
 
 /* Page refresh prevention */
