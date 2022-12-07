@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./styles/style.css" />
-    
+    <script src="https://kit.fontawesome.com/b6ca5087fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
+        
     <div class="container-cont">
+            <div id="date-bar"></div>
+            <!-- START Navbar -->
+            <nav>
+                <!-- Navbar list logo & list item -->
+                <ul class="menu">
+                    <li class="logo"><img class="logo-img" src="/img/logo-sml.png" alt="maremjes-gallery-logo"> </li>
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="catalog.html">Catalog</a></li>
+                    <li class="item"><a href="faq.html">FAQ</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                    <li class="item button"><a href="#">Membership</a></li>
+                    <li class="item button secondary"><a href="#">Buy Tickets</a></li>
+                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
         <div class="title-cont">
                 <h2>Contact us</h2>
                 <hr>
@@ -29,10 +46,49 @@
                         </form>
                     </div>
         </div>
-        
+        <div class="footer-item">
+                <h2 class="footer-title">Future Exhibitions</h2>
+                <p>Receive 2023 exhibitions' brouchure.</p>
+                <form id="form">
+                    <div class="inputBox">
+                        <input id="email" type="text" placeholder="Email address" onkeyup="emailVerification()">
+                        <input id="submit" type="submit" value="Download" onclick="submitNewsletter()">
+                        <div><i class="fa-solid fa-circle indicator"></i><span id="checker"></span></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </div>
+
+    
+        <!-- Footer social -->
+        <div class="footer-social">
+                <ul class="footer-social-list">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+    
+            <!-- Footer legal -->
+            <div class="footer-legal">
+                <ul class="footer-legal-list">
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li>&copy; 2022 MAREMJES Gallery </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- END Footer -->
+   
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer>
+    
     </script>
+    <script src="js/script.js"></script>
+    
     <script src="./maremjes.js"></script>
     
 </body>

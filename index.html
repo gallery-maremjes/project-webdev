@@ -6,11 +6,27 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b6ca5087fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-   
+<body onload="date()">
+        <div id="date-bar"></div>
+        <!-- START Navbar -->
+        <nav>
+            <!-- Navbar list logo & list item -->
+            <ul class="menu">
+                <li class="logo"><img class="logo-img" src="/img/logo-sml.png" alt="maremjes-gallery-logo"> </li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="catalog.html">Catalog</a></li>
+                <li class="item"><a href="faq.html">FAQ</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+                <li class="item button"><a href="#">Membership</a></li>
+                <li class="item button secondary"><a href="#">Buy Tickets</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
     <div id="container">
         <div id="top-img">
             <h3>Expo until 15 Dec</h3>
@@ -439,12 +455,77 @@
            
             </div>
     </div>
+     <!-- START Footer -->
+     <footer>
+            <!-- Footer addresses -->
+            <div class="footer-main">
+                <div class="footer-item">
+                    <h2 class="footer-title">London</h2>
+                    <p>54 Liverpool Street<br>
+                        London W1S 3LZ</p>
+                    <p>T +44 (0)20 1234 5678 <br>
+                        <a href="mailto:london@maremjes.com">london@maremjes.com</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h2 class="footer-title">Dublin</h2>
+                    <p>25 Cork Street<br>
+                        Dublin D01 E897</p>
+                    <p>T +353 (0)1 123 4567 <br>
+                        <a href="mailto:dublin@maremjes.com">dublin@maremjes.com</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h2 class="footer-title maremjes-info">MAREMJES Gallery</h2>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Buy Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h2 class="footer-title">Future Exhibitions</h2>
+                    <p>Receive 2023 exhibitions' brouchure.</p>
+                    <form id="form">
+                        <div class="inputBox">
+                            <input id="email" type="text" placeholder="Email address" onkeyup="emailVerification()">
+                            <input id="submit" type="submit" value="Download" onclick="submitNewsletter()">
+                            <div><i class="fa-solid fa-circle indicator"></i><span id="checker"></span></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
     
+            <!-- Footer social -->
+            <div class="footer-social">
+                <ul class="footer-social-list">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+    
+            <!-- Footer legal -->
+            <div class="footer-legal">
+                <ul class="footer-legal-list">
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li>&copy; 2022 MAREMJES Gallery </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- END Footer -->
 
     
 
     </div>
     <script src="./maremjes.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
