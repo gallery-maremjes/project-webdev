@@ -11,68 +11,7 @@ body {
     background-color: black;
 }
 
-/*navbar*/
-#navbar {
-  background-color: rgb(230, 237, 245);
-  background: linear-gradient(90deg, rgba(246,219,219,1) 0%, rgba(255,255,255,0.7959558823529411) 73%, rgba(245,241,243,1) 100%);
-  margin-top: 0px;
-  padding: 0px;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  font-family: 'fantasy';
-  
-}
 
-#logo-box {
-    height: 100%;
-    width: auto;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-      /* ???*/
-}
-
-#logo-link {
-    height: 90%;
-}
-#logo-img {
-    height: 100%;  /* ???*/
-}
-
-#items-nav {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-    width: 80%;
-    font-size: 1.2rem;
-    
-
-}
-
-.nav-list  {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    list-style-type: none;
-}
-
-.nav-list li {
-    padding: 20px;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: rgb(243, 139, 97);
-}
-
-.nav-list li a:hover {
-    text-decoration: none;
-    color: rgb(49, 25, 15);
-    font-size: 110%;
-    
-}
 
 /*catalog*/
 
@@ -261,7 +200,29 @@ height: auto;
 .gal-top hr {
     width: 90%;
 }
+#map-cont {
+    width: 50%;
+    height: 370px; 
+    
+}
 
+.form-cont {
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cont input {
+    width: 60%;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.form-cont textarea {
+    margin-top: 30px;
+}
 
 
 @media screen and (max-width: 940px) {
@@ -303,6 +264,10 @@ height: auto;
 
 }
 
+#map-cont {
+    width: 100%;
+}
+
 .gal-top p {
     font-style: italic;
 }
@@ -310,37 +275,39 @@ height: auto;
 /*contactus*/
 .box-cont {
     flex-direction: column;
-    color: red;
-    flex-wrap: nowrap;
+    padding-bottom: 100px;
+    width: 100%;
+    align-items: center;
 }
 
-body .container-cont {
-    position: absolute;
+.title-cont {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+.form-cont {
+    margin-top: 50px;
+    width: 100%;
 }
 
 
 
+.form-cont input, textarea{
+    width: 51%;
+    margin-left: 15%;
+}
+
+.form-cont h3 {
+    margin-left: 15%;
+}
+
+
 }
 
 
 
-@media screen and (max-width: 420px) {
-    #top-img h3 {
-        width: 50%;
-        font-size: 0.6em;
-    }
 
-    #but-box {
-        width: 100%;
-        background-color: rgb(0, 0, 0);
-    }
-
-    #but-box .but-gal{
-        width: 100%;
-        margin: auto;
-    }
-
-}
 
 /* contact us styles*/
 
@@ -358,42 +325,22 @@ body .container-cont {
 
 .title-cont {
   width: 15%;
-  margin: 50px auto auto 150px;
+  margin-left: 150px;
+  padding-top: 30px;
 }
+
 .box-cont {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    height: 55%;
     margin: 10% auto auto;
     width: 80%;
+    padding-bottom: 150px;
 
 }
 
-#map-cont {
-    background-color: brown;
-    width: 50%;
-    height: 100%;
-    
-}
 
-.form-cont {
-    background-color: rgb(255, 255, 255);
-    width: 35%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
-.form-cont input {
-    width: 60%;
-    height: 30px;
-    margin-top: 30px;
-}
 
-.form-cont textarea {
-    margin-top: 30px;
-}
 
 #sub-cont {
     background-color: rgb(0, 0, 0);
@@ -401,7 +348,7 @@ body .container-cont {
     font-weight: bolder;
     border: solid white 2px;
     border-radius: 7px;
-    width: 50%;
+    width: 53%;
     height: 45px;
 }
 
@@ -410,3 +357,43 @@ body .container-cont {
   background-color: #dcb46f;
 
 }
+
+
+@media screen and (max-width: 450px) {
+    #top-img h3 {
+        width: 50%;
+        font-size: 0.6em;
+    }
+
+    #but-box {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #but-box .but-gal{
+        width: 100%;
+        margin: auto;
+    }
+
+    .title-cont {
+        width: 50%;
+        font-size: 0.6em;
+        margin: auto;
+    }
+
+
+    .box-cont {
+        width: 100%;
+        text-align: center;
+    }
+
+    #form-cont input,textarea {
+        width: 90%;
+        margin-left: auto;
+
+    }
+
+    
+
+    }
+
