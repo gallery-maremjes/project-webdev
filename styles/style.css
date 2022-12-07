@@ -2,6 +2,9 @@
 Jesus Garcia
 group project
 */
+
+
+
 body {
     padding: 0%;
     margin: 0%;
@@ -91,10 +94,10 @@ body {
 
 #top-img h3 {
     color: rgb(243, 247, 243);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 0.8em;
+    font-family:   'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.7em;
     position: absolute;
-    width: 10%;
+    width: 30%;
     height: 50px;
     background-color: black;
     opacity: 0.5;
@@ -135,19 +138,41 @@ height: auto;
     
 }
 
-#but-gal {
+.but-gal {
     height: 40px;
     width: 100px;
     display: block;
-    margin: 20px auto;
+    margin: 20px 45%;
     border-radius: 8px;
     border-color: rgba(246,219,219,1);
 }
 
 .second {
     display: none;
+    
 }
 
+.third {
+    display: none;
+}
+.fourth {
+    display: none;
+}
+.fifth {
+    display: none;
+}
+.sixth {
+    display: none;
+}
+.seventh {
+    display: none;
+}
+.eighth {
+    display: none;
+}
+.ninth {
+    display: none;
+}
 
 #footer {
     background-color: rgb(0, 0, 0);
@@ -185,4 +210,209 @@ height: auto;
     height: 30px;
     border-radius: 6px;
     width: 250px;
+}
+
+
+ .popup-img {
+    position: fixed;
+    height: auto;
+    width: 80%;
+    text-align: center;
+    display: none;
+}
+
+.popup-img img {
+    border:5px solid white;
+    width: 50%;
+    height: auto;
+    
+    
+
+}
+
+.popup-img span {
+    top: 1%;
+    font-size: 40px;
+    position: absolute;
+    right: 50px;    
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+.gal-top {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: baseline; 
+    width: 95%;
+    margin: 40px auto;
+
+}
+
+.gal-top p {
+    font-style: italic;
+}
+
+.gal-top i {
+  margin-right: 5px;
+}
+
+.gal-top hr {
+    width: 90%;
+}
+
+
+
+@media screen and (max-width: 940px) {
+
+    #container {
+        width: 100%;
+    }
+    .card {
+       width: 95%;
+       background-color: rgb(0, 0, 0);
+   }
+
+   #but-box {
+       opacity: 0.95;
+   }
+
+    .card-title {
+    color: rgb(210, 210, 210);
+   }
+
+   
+
+   #container {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.gal-top {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: baseline; 
+    color: rgb(255, 255, 255);
+    width: 70%;
+
+}
+
+.gal-top p {
+    font-style: italic;
+}
+
+/*contactus*/
+.box-cont {
+    flex-direction: column;
+    color: red;
+    flex-wrap: nowrap;
+}
+
+body .container-cont {
+    position: absolute;
+}
+
+
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+    #top-img h3 {
+        width: 50%;
+        font-size: 0.6em;
+    }
+
+    #but-box {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #but-box .but-gal{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+/* contact us styles*/
+
+.container-cont {
+    
+   /* background-image: url("../imgs/guguen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    
+    
+}
+
+.title-cont {
+  width: 15%;
+  margin: 50px auto auto 150px;
+}
+.box-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 55%;
+    margin: 10% auto auto;
+    width: 80%;
+
+}
+
+#map-cont {
+    background-color: brown;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.form-cont {
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cont input {
+    width: 60%;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.form-cont textarea {
+    margin-top: 30px;
+}
+
+#sub-cont {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: solid white 2px;
+    border-radius: 7px;
+    width: 50%;
+    height: 45px;
+}
+
+#sub-cont:hover {
+  font-size: 1em;
+  background-color: #dcb46f;
+
 }

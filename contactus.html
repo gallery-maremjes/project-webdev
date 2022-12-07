@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles/style.css" />
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-cont">
+        <div class="title-cont">
+                <h2>Contact us</h2>
+                <hr>
+        </div>
+        
+        <div class="box-cont">
+                <div  id="map-cont">
+                    </div>
+                    <div class="form-cont">
+                        <h3>Get in touch with us</h3>
+                        <form id="form-cont" onsubmit="return false">
+                            <input placeholder="name" name="name">
+                            <input placeholder="phone" name="phone">
+                            <textarea rows="4" cols="45" placeholder="Reason to contact us" name="reason"></textarea>
+                            <input type="submit" id="sub-cont" onclick="val()">
+                        </form>
+                    </div>
+        </div>
+        
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer>
+    </script>
+    <script src="./maremjes.js"></script>
+    
+</body>
+</html>
