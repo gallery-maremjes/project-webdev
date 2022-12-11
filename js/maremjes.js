@@ -1,4 +1,6 @@
-    $("#but-gal-sec").click(function() {
+   /* Jesus Garcia
+   Group Project */
+   $("#but-gal-sec").click(function() {
         $(".second").show( "slow" )
         $("#but-gal-sec").hide();
       });
@@ -52,6 +54,7 @@
       //contact us
 
 
+      /* Documentation: https://developers.google.com/maps/documentation/javascript/overview */
       function initMap() {
         const uluru = { lat: 53.34888, lng: -6.24293 };
         const map = new google.maps.Map(document.getElementById("map-cont"), {
